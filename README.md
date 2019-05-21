@@ -7,7 +7,7 @@ CentOS Errata information
 Requirements
 ------------
 
-Become a patron of the Updateinfo project on [Patreon](https://updateinfo.cefs.steve-meier.de/). It's $1/month and will 
+Become a patron of the Updateinfo project on [Patreon](https://www.patreon.com/stevemeier). It's $1/month and will 
 help run the site and pay for Amazon CloudFront which serves the content.
 
 Role Variables
