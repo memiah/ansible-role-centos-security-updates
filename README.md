@@ -1,7 +1,8 @@
 CentOS Security Updates
 ==================
 
-An Ansible Role that configures CentOS security updates, using the [Updateinfo](https://updateinfo.cefs.steve-meier.de/) repository - A yum repository with 
+An Ansible Role that configures CentOS security updates, using the [Updateinfo](https://updateinfo.cefs.steve-meier.de/) 
+repository - A yum repository with 
 CentOS Errata information
 
 Requirements
@@ -35,7 +36,8 @@ Domain endpoint to the updates repository.
     centos_security_updates_email: you@example.com
     centos_security_updates_password: PASSWORD
     
-Email address and password you received from `Steve Meier <email (at) steve (dash) meier (dot) de>` _(not your Patreon credentials)_.
+Email address and password you received from `Steve Meier <email (at) steve (dash) meier (dot) de>` _(not your Patreon 
+credentials)_.
     
     centos_security_updates_yum_update_cmd: security
     
