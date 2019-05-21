@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: memiah.centos-security-updates
+  role_name: centos_security_updates
   author: memiah
   description: Install CentOS security only updates.
   company: "Memiah Limited"
