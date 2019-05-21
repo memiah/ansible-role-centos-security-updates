@@ -1,0 +1,14 @@
+---
+centos_security_updates_enabled: yes
+
+centos_security_updates_file: CentOS-Errata
+
+centos_security_updates_name: errata
+
+centos_security_updates_endpoint: updateinfo.cefs.steve-meier.de
+
+centos_security_updates_yum_update_cmd: security
+
+# Credentials from your updateinfo signup confirmation email (not your Patreon login):
+centos_security_updates_email: you@example.com
+centos_security_updates_password: PASSWORD

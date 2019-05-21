@@ -1,0 +1,17 @@
+---
+- name: Add CentOS Errata yum repository.
+  yum_repository:
+    name: '{{ centos_security_updates_name }}'
+    description: CentOS-$releasever - Updates (from CEFS)
+    file: '{{ centos_security_updates_file }}'
+    baseurl: 'https://{{ centos_security_updates_email | replace("@","%40") }}:{{ centos_security_updates_password }}@{{ centos_security_updates_endpoint }}/$releasever/updates/$basearch'
+    gpgcheck: yes
+    repo_gpgcheck: no
+    enabled: '{{ centos_security_updates_enabled }}'
+
+- name: Configure kind of security update to use.
+  lineinfile:
+    dest: '/etc/yum/yum-cron.conf'
+    regexp: '^update_cmd = .+'
+    line: 'update_cmd = {{ centos_security_updates_yum_update_cmd }}'
+  when: security_autoupdate_enabled and ansible_distribution_major_version | int == 7
